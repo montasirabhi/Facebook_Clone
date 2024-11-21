@@ -485,31 +485,68 @@ nav{
     padding-left: 23px;
     background: #0a0a0a;
 }
-.my-members {  
-    position: absolute;
-    width: 90%;
-    max-width:1200px;
-    background: var(--bg-color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    border-radius: 4px;
-    overflow: hidden;
-    top: 108%;
-    right: 5%;
-    max-height:0 ;
-    transition: max-height 0.3s ;
+
+@media only screen and (max-width: 600px) {
+   .right-sidebar{
+    display: none;
+   }
+   .left-sidebar{
+    display: none;
+   }
+   nav{
+    flex-wrap: wrap;
+   }
+   .search-box{
+    display: none;
+   }
+   .logo{
+    width: 110px;
+    margin-right: 20px;
+   }
+   .nav-left ul li img{
+    width: 20px;
+    margin: 0 8px;
+   }
+   .nav-user-icon img{
+    width: 30px;
+   }
+   .nav-user-icon{
+    margin-left:0 ;
+   }
+   .add-post-links{
+    flex-wrap: wrap;
+   }
+   .main-content{
+    flex-basis: 100%;
+   }
+   .story img{
+        width: 20px;
+        border-width: 3px ;
+   }
+   .story p{
+    font-size: 10px;
+   }
+   .story .story1 img{
+    width: 30px;
+    bottom: 30px;
+   }
+   .add-post-links a{
+    margin-right: 12px;
+    font-size: 9px;
+   }
+   .add-post-links a img{
+        width: 16px;
+        margin-right: 5px;
+   }
+   .post-input-container{
+    padding-left: 0;
+   }
+   .nav-left ul li img{
+    width: 28px;
+    margin: 0 15px;
+    display: block;
 }
-.my-members-on{
-    max-height: 900px;
-}
-.my-members table th{
-    height: 40px;
-    width: 150px;
-    background-color: #18f26c;
-    border-radius: 2px;
-    cursor: pointer;
-}
-.my-members table td{
-    text-align: center;
-    background-color: rgb(129, 174, 219);
-    border-radius: 2px;
-}
+
+
+
+
